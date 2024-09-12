@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>D&D Survey</title>
+        <link rel="stylesheet" href="styles_dnd.css" />
+    </head>
+    <body>
+        <h1 id="title">Dungeons and Dragons Survey</h1>
+        <p id="description">Getting to know the playerbase better</p>
+        <form id="survey-form">
+            <fieldset>
+                <label id="name-label" for="name">Enter your name<input id="name" name="name" type="text" placeholder="John Doe" required></label>
+                <label id="email-label" for="email">Enter your email<input id="email" name="email" type="email" placeholder="johndoe@gmail.com" required></label>
+                <label id="number-label" for="number">Input your age (optional): <input id="number" name="number" type="number" min="13" max="120" placeholder="13+" /></label>
+            </fieldset>
+            <fieldset>
+                <label for="referrer">How often do you play D&D?
+                    <select id="dropdown" name="dropdown">
+                        <option value="" selected="true" disabled>(select one)</option>
+                        <option value="1">Never</option>
+                        <option value="2">Once or twice a year</option>
+                        <option value="3">Once every month or two</option>
+                        <option value="4">A couple times a month</option>
+                        <option value="5">At least once a week</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Would you want to play with a new group of people?</legend>
+                <label for="will-play"><input type="radio" id="will-play" value="will-play" name="play-type" checked /> Definitely</label>
+                <label for="may-play"><input type="radio" id="may-play" value="may-play" name="play-type" /> Maybe</label>
+                <label for="never-play"><input type="radio" id="never-play" value="never-play" name="play-type" /> Never</label>
+            </fieldset>
+            <fieldset>
+                <legend>Would you want to play with a new group of people?</legend>
+                <label for="artificer"><input type="checkbox" id="artificer" value="artificer" name="player-class" /> Artificer</label>
+                <label for="barbarian"><input type="checkbox" id="barbarian" value="barbarian" name="player-class" /> Barbarian</label>
+                <label for="bard"><input type="checkbox" id="bard" value="bard" name="player-class" /> Bard</label>
+                <label for="cleric"><input type="checkbox" id="cleric" value="cleric" name="player-class" /> Cleric</label>
+                <label for="druid"><input type="checkbox" id="druid" value="druid" name="player-class" /> Druid</label>
+                <label for="fighter"><input type="checkbox" id="fighter" value="fighter" name="player-class" /> Fighter</label>
+                <label for="monk"><input type="checkbox" id="monk" value="monk" name="player-class" /> Monk</label>
+                <label for="paladin"><input type="checkbox" id="paladin" value="paladin" name="player-class" /> Paladin</label>
+                <label for="ranger"><input type="checkbox" id="ranger" value="ranger" name="player-class" /> Ranger</label>
+                <label for="rogue"><input type="checkbox" id="rogue" value="rogue" name="player-class" /> Rogue</label>
+                <label for="sorcerer"><input type="checkbox" id="sorcerer" value="sorcerer" name="player-class" /> Sorcerer</label>
+                <label for="warlock"><input type="checkbox" id="warlock" value="warlock" name="player-class" /> Warlock</label>
+                <label for="wizard"><input type="checkbox" id="wizard" value="wizard" name="player-class" /> Wizard</label>
+            </fieldset>
+            <fieldset>
+                <label for="story">Provide a bio:
+                    <textarea id ="story" name="story" rows="5" cols="30" placeholder="Once I was an adventurer like you..."></textarea>
+                </label>
+            </fieldset>
+            <fieldset>
+                <input type="submit" id="submit" value="Submit"/>
+            </fieldset>
+        </form>
+    </body>
+</html>
