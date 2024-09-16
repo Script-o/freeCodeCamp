@@ -1,0 +1,73 @@
+* {
+    font-family: Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(0, #680039,#c0006a 40%, #c0006a 60%, #680039);
+    color: #e2e0d3;
+    margin: 0;
+}
+ul {
+    padding-left: 18px;
+}
+li {
+    line-height: 20px;
+    padding-bottom: 14px;
+}
+
+
+#image {
+    width:80%;
+    height: auto;
+    display: block;
+    max-width: 1000px;
+    min-width: 400px; /*Disable this for text*/
+    margin: 0 auto;
+    padding: 0;
+}
+header {
+    margin: 0 auto;
+}
+header > h1, header > p {
+    text-align: center;
+    color: #fffcf0;
+    text-shadow: 1px 1px 4px #000000;
+}
+header > h1 {
+    font-size: max(56px, 4vw);
+    margin: 0;
+}
+header > p {
+    font-size: max(14px,1vw);
+    margin: 0 0 10px 0;
+}
+figure{
+    display: block;
+    margin: 0;
+    text-align: center;
+}
+figcaption{
+    font-size: min(14.5px,max(9px, 1.4vw));
+}
+.container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    min-width: 450px;
+    background-color: #172438;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid black;
+}
+div[class="container"] p a:link{
+    color: #c0006a;
+}
+div[class="container"] p a:visited{
+    color: #c0006a;
+}
+div[class="container"] p a:hover{
+    color: #ff5ab5;
+}
+div[class="container"] p a:active{
+    color: #e2e0d3;
+}
