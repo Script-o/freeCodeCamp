@@ -2,14 +2,17 @@ body {
     width: 100%;
     height: 100vh;
     margin: 0;
-    background-color: #1b1b32;
-    color: #f5f6f7;
+    background-color: #291200;
+    color: #000000;
     font-family: Tahoma;
     font-size: 16px;
 }
-h1, p {
+h1, h2, h3, p {
     margin: 1em auto;
     text-align: center;
+}
+h1, p:first-of-type {
+    color: white;
 }
 form {
     margin: 0 auto;
@@ -21,34 +24,45 @@ form {
 fieldset {
     border: 0;
     padding: 2rem 0;
-    border-bottom: 3px solid #3b3b4f;
+    background-color:#ffcf91;
+    border-bottom: 3px solid #ffffff;
 }
+
 fieldset:last-of-type {
     border-bottom: none;
 }
 label {
     display: block;
-    margin: 0.5rem 0;
+    margin: 0.5rem 2%;
 }
 input,
 textarea,
 select {
   margin: 10px 0 0 0;
-  width: 100%;
+  width: 98%;
   min-height: 2em;
-  color: #ffffff;
+  color: #250c00;
+}
+textarea, select {
+    width: 98%;
+    display: block;
 }
 input, textarea {
-    background-color: #0a0a23;
-    border: 1px solid #0a0a23;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
 }
-.inline {
+label a {
+    color: #dfdfe2;
+}
+input[type="radio"]  {
     width: unset;
     margin: 0 0.5em 0 0;
     vertical-align: middle;
 }
-label a {
-    color: #dfdfe2;
+input[type="checkbox"]  {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
 }
 input[type="submit"] {
     display: block;
@@ -56,11 +70,18 @@ input[type="submit"] {
     margin: 1em auto;
     height: 2em;
     font-size: 1.1rem;
-    background-color: #3b3b4f;
-    border-color: white;
+    background-color: #773600;
+    border-color: rgb(129, 30, 0);
+    color: white;
     min-width: 300px;
 }
-
 input[type="file"] {
     padding: 1px 2px;
+}
+legend {
+    float: left;
+    margin-top: -20px;
+}
+footer a {
+    color: white;
 }

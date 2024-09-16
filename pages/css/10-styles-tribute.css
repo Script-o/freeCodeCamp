@@ -71,3 +71,9 @@ div[class="container"] p a:hover{
 div[class="container"] p a:active{
     color: #e2e0d3;
 }
+footer {
+    text-align: center;
+}
+footer a {
+    color: #e2e0d3;
+}

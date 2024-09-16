@@ -1,73 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <title>CatPhotoApp</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <title>Example Websites</title>
+        <link href="styles.css" rel="stylesheet">
     </head>
     <body>
-        <main>
-            <p><a href="pages/cafe_menu.html">See the Cafe Menu</a></p>
-            <p><a href="pages/colors.html">See the Colored Markers</a></p>
-            <p><a href="pages/registration_form.html">See the Registration Form</a></p>
-            <p><a href="pages/dnd_survey.html">See the DnD Survey</a></p>
-            <p><a href="pages/box_model.html">See Rothko Painting</a></p>
-            <p><a href="pages/photo_gallery.html">See Cute Cat Pictures</a></p>
-            <p><a href="pages/nutrition_block.html">See a Nutrition Label</a></p>
-            <p><a href="pages/quiz.html">See a HTML/CSS quiz</a></p>
-            <p><a href="pages/tribute.html">See a tribute page to Desmond Tutu</a></p>
-            <h1>CatPhotoApp</h1>
-            <section>
-                <h2>Cat Photos</h2>
-                <!-- TODO: Add link to cat photos -->
-                <p>See more <a href="https://freecatphotoapp.com" target="_blank">cat photos</a> in our gallery.</p>
-                <a href="https://freecatphotoapp.com">
-                    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back">
-                </a>
-            </section>
-            <section>
-                <h2>Cat Lists</h2>
-                <h3>Things cats love:</h3>
-                <ul>
-                    <li>cat nip</li>
-                    <li>laser pointers</li>
-                    <li>lasagna</li>
-                  </ul>
-                  <figure>
-                    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
-                    <figcaption>Cats <em>love</em> lasagna.</figcaption>
-                  </figure>
-                  <h3>Top 3 things cats hate:</h3>
-                  <ol>
-                    <li>flea treatment</li>
-                    <li>thunder</li>
-                    <li>other cats</li>
-                  </ol>
-                  <figure>
-                    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
-                    <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
-                  </figure>
-            </section>
-            <section>
-                <h2>Cat Form</h2>
-                <form action="https://freecatphotoapp.com/submit-cat-photo">
-                    <fieldset>
-                        <legend>Is your cat an indoor or outdoor cat?</legend>
-                        <label><input checked id="indoor" value="indoor" type="radio" name="indoor-outdoor"> Indoor</label>
-                        <label><input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor"> Outdoor</label>
-                    </fieldset>
-                    <fieldset>
-                        <legend>What's your cat's personality?</legend>
-                        <input checked id="loving" type="checkbox" name="personality" value="loving"> <label for="loving">Loving</label>
-                        <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
-                        <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic"> Energetic</label>
-                    </fieldset>
-                    <input type="text" name="catphotourl" placeholder="cat photo URL" required>
-                    <button type="submit">Submit</button>
-                </form>
-            </section>
-        </main>
-        <footer>
-            <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
-        </footer>
+        <header class="header">
+            <h1>Example Website Gallery</h1>
+        </header>
+        <div class="gallery">
+            <a href="pages/1-cat-photo.html"><img src="images/1-cat-photo.jpg" alt="Cat napping on blanket"></a>
+            <a href="pages/2-cafe-menu.html"><img src="images/2-cafe.jpg" alt="Cat lying on its back with its paws out"></a>
+            <a href="pages/3-colors.html"><img src="images/3-marker.jpg" alt="Cat looking down and to the left"></a>
+            <a href="pages/4-registration-form.html"><img src="images/4-registration.jpg" alt="Cat sleeping under a white blanket"></a>
+            <a href="pages/5-dnd-survey.html"><img src="images/5-dnd.jpg" alt="Kitten with bright blue eyes looking forward"></a>
+            <a href="pages/6-box-model.html"><img src="images/6-box.jpg" alt="Two kittens looking down and to the left"></a>
+            <a href="pages/7-photo-gallery.html"><img src="images/7-cat.jpg" alt="Kitten with wide eyes under stringy blanket"></a>
+            <a href="pages/8-nutrition-block.html"><img src="images/8-nutrition.jpg" alt="Orange cat looking forward"></a>
+            <a href="pages/9-quiz.html"><img src="images/9-quiz.jpg" alt="White cat with blue eyes lying on top of sleepy black cat"></a>
+            <a href="pages/10-tribute.html"><img src="images/10-tutu.jpg" alt="White cat with blue eyes lying on top of sleepy black cat"></a>
+        </div>
     </body>
 </html>

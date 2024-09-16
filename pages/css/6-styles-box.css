@@ -43,3 +43,6 @@
     border-radius: 30px 25px 60px 12px;
     transform: rotate(-0.2deg);
 }
+footer {
+    text-align: center;
+}

@@ -80,3 +80,11 @@ p {
     padding: 0 8px;
     text-indent: -8px;
 }
+footer p{
+    margin: 0;
+    display: block;
+    justify-content:last baseline;
+}
+footer {
+    text-align: center;
+}
