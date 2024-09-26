@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Git Basics</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/14-styles-tech.css"/>
+    </head>
+    <body>
+        <nav id="navbar">
+            <header>Navigation</header>
+            <a href="#Introduction" class="nav-link">Introduction</a>
+            <a href="#What_is_Git?" class="nav-link">What is Git?</a>
+            <a href="#What_is_GitBash?" class="nav-link">What is GitBash?</a>
+            <a href="#What_is_GitHub?" class="nav-link">What is GitHub?</a>
+            <a href="#Every_Day_Commands" class="nav-link">Every Day Commands</a>
+            <a href="#GitHub/Cloud_Commands" class="nav-link">GitHub/Cloud Commands</a>
+        </nav>
+        <main id="main-doc">
+            <section id="Introduction" class="main-section">
+                <header class="first-header">Introduction</header>
+                <p>The purpose of this page is to create as basic an explanation of Git and GitHub as possible. I'm a student just like many who will be reading this so don't take my words as gospel and do your own research if you want to learn more. Some of these explanations are going to be written in an overly simplified form so they might not be the most accurate in higher level context but the purpose is to get some of the more confusing aspects across to a beginner so that they can better visualize what they are doing. The latter half of this page will also be a place I will be storing git commands and a brief explanation for future reference.</p>
+                <p>The information here is going to be beginner friendly in terms of Git environments but it will assume basic computer knowledge. Here is a list of information that you will want to research yourself if you feel like you don't have a solid understanding. Also all of this information will be from a Windows perspective. If you are on Mac, Linux, or otherwise some of the information might not be directly comparable.</p>
+                <ul>
+                    <li>Files and Folder</li>
+                    <li>Installing New Programs</li>
+                    <li>GitHub</li>
+                </ul>
+            </section>
+            <section id="What_is_Git?" class="main-section">
+                <header>What is Git?</header>
+                <p>At the most basic level a Git Repository is just a file on your computer that exists inside a folder, and it tracks changes that occur within that folder. The important takeaway here is that the “Repository” itself is just a folder like any other folder on your computer. One big hurdle I've seen people struggle with is that when their repository is broken, they don't know how to fix it. Well, just like if you had installed a program incorrectly you will “uninstall” the folder by deleting and creating a new copy. The hidden .git file is tracking and recording all the changes in your repository. To change a folder back to “normal” you can just delete that .git file and your folder will no longer be a git repository.</p>
+            </section>
+            <section id="What_is_GitBash?" class="main-section">
+                <header>What is GitBash?</header>
+                <p>In this next section I am going to be covering GitBash. If you are using a different Git emulation program or are on a different operating system this should translate generally but might be off on some of the finer details.</p>
+                <p>GitBash is purely a tool that converts git commands into windows actions.  At the higher levels it can do some very complex windows actions very quickly but at the beginner level it helps to think of what you are doing is telling the computer with text what to do instead of with an action. A big piece of advice I would give any developers struggling with GitBash in particular is get comfortable unistalling and reinstalling GitBash as well as closing and opening the program regularly. GitBash is just a shell that we are inputting commands into, it does not have any repositories or files or anything imporant saved inside the program itself. Below are some example of what I mean, you can try these commands on your own if you want to see that they are exactly the same functionally.</p>
+                <ul class = "code-list">
+                    <li>Windows Command | <code>Git Command</code></li>
+                    <li>Right Click > New > Folder | <code>$ mkdir folder_name</code></li>
+                    <li>Right Click > Open | <code>$ cd folder_name</code></li>
+                    <li>Right Click > New > Text Document | <code>$ code file_name.txt</code></li>
+                </ul>
+            </section>
+            <section id="What_is_GitHub?" class="main-section">
+                <header>What is GitHub?</header>
+                <p>At the most basic level, GitHub is a cloud-based data storage platform. What that means, in its most simple form, is that it is another computer that you are connecting to and sharing files and folders with. If you were to look at the back end of a GitHub repo it would look very similar to your own computer in that it is just a collection of files and folders.</p>
+                <p>What this means in practice is that when you clone a GitHub repository, functionally it is the same as if you copied files from my repository on my computer and pasted them onto your computer. When you are editing your local repository and pushing that data back to GitHub it is the same as if you changed those copied files on your computer then showed me those changes so that I can update the files on my computer to be the same. The benefit of the .git repository is that instead of having to manually track those changes it is keeping a record of every change and sending that to and from GitHub anytime you make a pull or push request.</p>
+                <p>I have found this is by far the most confusing aspect to new developers, so I want to reinforce that it really is no more complicated than that. Something new developers struggle with is “losing” their local repository and thinking all their work is gone but that mindset is flawed. Each of these local repositories are copies, that’s all. As an example, you can clone multiple versions of the same GitHub repository onto your computer and each of them is a separate copy of the original GitHub repository. The reason this is so important, especially when looking at the DevOps way of thinking, is that in the world of computers creating, breaking, and deleting copies is as easy as tying a command. Because it is so easy to do this it allows us the freedom to develop without fear, which I know for most folks who have worked jobs outside of the tech sphere is a really hard concept to wrap your mind around. </p>
+            </section>
+            <section id="Every_Day_Commands" class="main-section">
+                <header>Every Day Commands</header>
+                <p>These are going to be some of the most common commands you'll be using on a regular basis and a brief description of what they do.</p>
+                <p>The first command to learn and really get used is the list command. What this command does is tell you what files exist within the current directly. I would recommend using this command almost any time you change directories or anytime you’re not sure where you want to navigate to next.</p>
+                <code>$ ls</code>
+                <p>The print working directory is also a useful command to figure out where you are if you ever get lost. It will show you what file path your current position is located at.</p>
+                <code>$ pwd</code>
+                <p>The change directory command is one that you will be using constantly. The simple way to view this command is that you are just clicking through folders on your computer. When you input the change directory command you will need to enter a path name that you are wanting to change to, this is most useful when combined with the list command.</p>
+                <code>$ cd filepath</code>
+                <p>When you want to move up/back a folder you will need to use two periods when using the change directory command. I wanted to include this twice because this version of change directory is almost like a separate command in how useful it is.</p>
+                <code>$ cd ..</code>
+                <p>This isn't exactly a command but is so useful I want to include it here. When typing out a file path once you have inputted the first few characters you can press [Tab] to auto complete the rest of the path name if that path name is the only one that matches. Over time this can really help you save time and effort.</p>
+                <code>[Tab]</code>
+                <p>The touch command allows you to create files in the current directory. When you use the touch command you will enter the file name AND you need to include the file extension (ex. .txt). If you fail to include the extension it will make a generic file that can't be used for much.</p>
+                <code>$ touch filename.md</code>
+                <p>The code command will open the file in whatever code editor you have setup in GitBash. When you enter the code command you will need to make sure you enter the file name AND the file extension. After you enter this command you might need to give it a few seconds to open your code editor.</p>
+                <code>$ code filename.md</code>
+                <p>The remove command will delete the file that you specify from the current directory. When you enter the remove command you will need to make sure to enter the file name AND the file extension. This does permanently delete the file and will not send it to the Recycle Bin. If you deleted something you didn’t want to delete, remember that you should be able to retrieve that file off of GitHub as long as you don’t push your local copy.</p>
+                <code>$ rm filename.md</code>
+            </section>
+            <section id="GitHub/Cloud_Commands" class="main-section">
+                <header>GitHub/Cloud Commands</header>
+                <p>These also fall into commands you will be using regularly but they specifically involve interacting with the cloud-based repository that you are synched up with (For instance, GitHub). All these commands assume that you have already synched your GitBash with GitHub. If you haven’t gotten that synched up yet, you will need to do so and there are plenty of resources online that can help you do that.</p>
+                <p>The clone command is only used when setting up a local copy of your GitHub repository. On GitHub you can find the url and you will enter it into the command. This will create a new folder with that repository name in the current directory and will download all of the files from that directory as well as set it up as a .git repository.</p>
+                <code>$ git clone https://github.com/Username/reponame.git</code>
+                <p>The status command will tell you if your repository is different than the GitHub repository. This will tell you all of the files that are different and will tell you if your repository is behind the GitHub one. It is useful to check this periodically if you are working alongside other developers.</p>
+                <code>$ git status</code>
+                <p>The pull command is used to download any changes that have been made to the GitHub repository since you last download it or any changes. This will mainly be used if you are working alongside others who are making changes to the repository simultaneously.</p>
+                <code>$ git pull</code>
+                <p>The add command will ready any file you specify to be uploaded to the GitHub repository.</p>
+                <code>$ git add filename.md</code>
+                <p>You can also use a period in place of the filename and it will ready every file that has been altered.</p>
+                <code>$ git add .</code>
+                <p>The commit command is used once files have been added. Commit will take all files that are ready and prepare them to be pushed to GitHub. You will also need to leave a comment about what you have changed or added to the repository.</p>
+                <code>$ git commit -m "This is a comment that includes an explanation for the changes"</code>
+                <p>The push command will take all files that have been added and committed and upload them to the GitHub repository. Another way to look at this process is how you save the changes you are wanting to make to the master repository.</p>
+                <code>$ git push</code>
+                <p>This is slightly more advanced but if you are working on a branch you will need to include which version of your repository you want to push to GitHub.</p>
+                <code>git push origin branchname</code>
+            </section>
+        </main>
+    </body>
+</html>
