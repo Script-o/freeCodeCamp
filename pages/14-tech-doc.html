@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/14-styles-tech.css"/>
     </head>
-    <body>
+    <body>        
         <nav id="navbar">
             <header>Navigation</header>
             <a href="#Introduction" class="nav-link">Introduction</a>
@@ -17,9 +17,13 @@
             <a href="#GitHub/Cloud_Commands" class="nav-link">GitHub/Cloud Commands</a>
         </nav>
         <main id="main-doc">
+            <div id="banner">
+                <h1><a href="../index.html">Back to the Website Gallery</a></h1>
+                <p>Created by Jon S (Script-o)</p>
+            </div>
             <section id="Introduction" class="main-section">
                 <header class="first-header">Introduction</header>
-                <p>The purpose of this page is to create as basic an explanation of Git and GitHub as possible. I'm a student just like many who will be reading this so don't take my words as gospel and do your own research if you want to learn more. Some of these explanations are going to be written in an overly simplified form so they might not be the most accurate in higher level context but the purpose is to get some of the more confusing aspects across to a beginner so that they can better visualize what they are doing. The latter half of this page will also be a place I will be storing git commands and a brief explanation for future reference.</p>
+                <p>The purpose of this page is to create as basic an explanation of Git and GitHub as possible. I'm a student just like many who will be reading this so don't take my words as gospel and do your own research if you want to learn more. Some of these explanations are going to be written in an overly simplified form so they might not be the most accurate in higher level context but the purpose is to get some of the more confusing aspects across to a beginner so that they can better visualize what they are doing. I have also listed some of the most useful git commands in the latter half of this page and will be updating as I learn more.</p>
                 <p>The information here is going to be beginner friendly in terms of Git environments but it will assume basic computer knowledge. Here is a list of information that you will want to research yourself if you feel like you don't have a solid understanding. Also all of this information will be from a Windows perspective. If you are on Mac, Linux, or otherwise some of the information might not be directly comparable.</p>
                 <ul>
                     <li>Files and Folder</li>
@@ -46,12 +50,12 @@
                 <header>What is GitHub?</header>
                 <p>At the most basic level, GitHub is a cloud-based data storage platform. What that means, in its most simple form, is that it is another computer that you are connecting to and sharing files and folders with. If you were to look at the back end of a GitHub repo it would look very similar to your own computer in that it is just a collection of files and folders.</p>
                 <p>What this means in practice is that when you clone a GitHub repository, functionally it is the same as if you copied files from my repository on my computer and pasted them onto your computer. When you are editing your local repository and pushing that data back to GitHub it is the same as if you changed those copied files on your computer then showed me those changes so that I can update the files on my computer to be the same. The benefit of the .git repository is that instead of having to manually track those changes it is keeping a record of every change and sending that to and from GitHub anytime you make a pull or push request.</p>
-                <p>I have found this is by far the most confusing aspect to new developers, so I want to reinforce that it really is no more complicated than that. Something new developers struggle with is “losing” their local repository and thinking all their work is gone but that mindset is flawed. Each of these local repositories are copies, that’s all. As an example, you can clone multiple versions of the same GitHub repository onto your computer and each of them is a separate copy of the original GitHub repository. The reason this is so important, especially when looking at the DevOps way of thinking, is that in the world of computers creating, breaking, and deleting copies is as easy as tying a command. Because it is so easy to do this it allows us the freedom to develop without fear, which I know for most folks who have worked jobs outside of the tech sphere is a really hard concept to wrap your mind around. </p>
+                <p>I have found this is by far the most confusing aspect to new developers, so I want to reinforce that it really is no more complicated than that. Something new developers struggle with is “losing” their local repository and thinking all their work is gone but that mindset is flawed. Each of these local repositories are copies, that’s all. As an example, you can clone multiple versions of the same GitHub repository onto your computer and each of them is a separate copy of the original GitHub repository. The reason this is so important, especially when looking at the DevOps way of thinking, is that in the world of computers creating, breaking, and deleting copies is as easy as tying a command. Because it is so easy to do this it allows us the freedom to develop without fear, which I know for most folks who have worked jobs outside of the tech sphere is a really hard habit to get into. </p>
             </section>
             <section id="Every_Day_Commands" class="main-section">
                 <header>Every Day Commands</header>
                 <p>These are going to be some of the most common commands you'll be using on a regular basis and a brief description of what they do.</p>
-                <p>The first command to learn and really get used is the list command. What this command does is tell you what files exist within the current directly. I would recommend using this command almost any time you change directories or anytime you’re not sure where you want to navigate to next.</p>
+                <p>The first command to learn and really get used to is the list command. What this command does is tell you what files exist within the current directly. I would recommend using this command almost any time you change directories or anytime you're not sure where you want to navigate to next.</p>
                 <code>$ ls</code>
                 <p>The print working directory is also a useful command to figure out where you are if you ever get lost. It will show you what file path your current position is located at.</p>
                 <code>$ pwd</code>

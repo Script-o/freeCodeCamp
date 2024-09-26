@@ -1,3 +1,36 @@
+#banner {
+    text-align: center;
+    font-family: sans-serif;
+    padding: 4px;
+    color: #0f0f0f;
+}
+#banner h1 {
+    text-transform: uppercase;
+    font-size: min(40px,max(4vw, 24px));
+    margin: 2px 0 2px 0;
+    max-width:none;
+    margin: 0;
+    padding: 0;
+}
+#banner p {
+    text-transform:none;
+    font-size: min(14px,max(1.5vw, 10px));
+    margin: 0;
+}
+#banner a {
+    color: #0f0f0f;
+    text-decoration: none;
+}
+#banner a:visited {
+    color:#0f0f0f;
+}
+#banner a:hover {
+    color:#c68aff;
+}
+#banner a:active {
+    color:#692ea1;
+}
+
 html {
     box-sizing: border-box;
 }

@@ -1,3 +1,33 @@
+#banner {
+    text-align: center;
+    font-family: sans-serif;
+    padding: 4px;
+    color: #0c0c0c;
+}
+#banner h1 {
+    text-transform: uppercase;
+    font-size: min(38px,max(3.75vw, 24px));
+    margin: 2px 0 2px 0;
+}
+#banner p {
+    text-transform:none;
+    font-size: min(14px,max(1.5vw, 10px));
+    margin: 0;
+}
+#banner a {
+    color: #0c0c0c;
+    text-decoration: none;
+}
+#banner a:visited {
+    color:#0c0c0c;
+}
+#banner a:hover {
+    color:#c68aff;
+}
+#banner a:active {
+    color:#692ea1;
+}
+
 @media (min-width: 800px) {
     #navbar a {
         display: block;
@@ -12,7 +42,7 @@
         visibility: hidden;
     }
     main {
-        padding-left: 2px;
+        padding-left: 20px;
     }
 }
 * {
@@ -28,7 +58,7 @@
 
 body {
     height: 100%;
-    width: calc(100%-200px);
+    width: calc(100% - 20px);
     max-width: 1600px;
     background-color: #adadad2d;
     line-height: 24px;

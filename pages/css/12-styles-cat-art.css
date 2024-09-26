@@ -1,3 +1,33 @@
+#banner {
+    text-align: center;
+    font-family: sans-serif;
+    padding: 4px;
+    color: #111111;
+}
+#banner h1 {
+    text-transform: uppercase;
+    font-size: min(40px,max(4vw, 24px));
+    margin: 2px 0 2px 0;
+}
+#banner p {
+    text-transform:none;
+    font-size: min(14px,max(1.5vw, 10px));
+    margin: 0;
+}
+#banner a {
+    color: #111111;
+    text-decoration: none;
+}
+#banner a:visited {
+    color:#111111;
+}
+#banner a:hover {
+    color:#86704d;
+}
+#banner a:active {
+    color:#d4a03e;
+}
+
 * {
     box-sizing: border-box;
 }
