@@ -1,0 +1,95 @@
+/* Global variables */
+:root {
+    --navbar-height: 75px;
+}
+
+/* Adjusts navbar to account for header */
+:target {
+    scroll-margin-top: var(--navbar-height);
+}
+
+/* General setup to make elements consistent */
+*, ::before, ::after {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    border: 0px solid black;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    height: 2000px;
+}
+
+/* This is everything to do with the navigation bar*/
+#div--nav-top {
+    display: flex;
+    width: 100%;
+    height: var(--navbar-height);
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: gray;
+    position: fixed;
+}
+.img--nav-left {
+    height: var(--navbar-height);
+}
+.div--nav-spacer {
+    width: 40%;
+}
+.a--nav-link {
+    padding: 0 3px;
+}
+#div--spacer-top {
+    height: var(--navbar-height);
+    width: 100%;
+    display: block;
+}
+
+/* Text based sections */
+.div--section-text {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - var(--navbar-height));
+    background-color: blue;
+    vertical-align: bottom;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.div-section-container {
+    margin: auto;
+}
+
+/* Image based sections */
+.div--section-images {
+    background-color: green;
+    width: 100%;
+    height: fit-content;
+    min-height: 100vh;
+}
+.div--section-images h1{
+    text-align: center;
+}
+.div--images-container {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-template-rows:min-content;
+    row-gap: 1px;
+    column-gap: 2%;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: darkgreen;
+}
+.div--images-container a{
+    width:100%;
+    height: fit-content;
+}
+.div--images-container a img{
+    width:100%;
+}
