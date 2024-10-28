@@ -1,38 +1,178 @@
-* {
-    box-sizing: border-box;
+/* Global variables */
+:root {
+    --navbar-height: 75px;
+    --navbar-color: #48225D;
+    --background-color-1: rgb(54, 54, 54);
+    --background-color-2: #005828;
+    --main-font-color: #c79447;
 }
-body {
+
+/* Adjusts navbar to account for header */
+:target {
+    scroll-margin-top: var(--navbar-height);
+}
+
+/* General setup to make elements consistent */
+*, ::before, ::after {
+    padding: 0;
     margin: 0;
-    font-family: sans-serif;
-    background-color: #f5f6f7;
+    box-sizing:border-box;
+    border: 0px solid black;
 }
-.header {
-    text-align: center;
-    text-transform: uppercase;
-    padding: 4px;
-    background: #1a0a23;
-    color: #fff;
-    border-bottom: 4px solid #921a1a;
+
+html {
+    font-size: 16px;
 }
-.gallery {
+
+/* This is everything to do with the navigation bar*/
+#div--nav-top {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 10px;
-    max-width: 1400px;
-    margin: 0 auto;
-    gap: 16px;
-}
-.gallery img {
     width: 100%;
-    max-width:350px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
+    height: var(--navbar-height);
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color:var(--navbar-color);
+    position: fixed;
+    box-shadow: 0px 1px 4px black;
 }
-.gallery::after {
-    content:"";
-    width:350px;
+.img--nav-left {
+    height: var(--navbar-height);
+}
+.div--nav-spacer {
+    width: 25%;
+}
+.a--nav-link {
+    padding: 0 5px;
+    font-size: 2rem;
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: whitesmoke;
+}
+#div--spacer-top {
+    height: var(--navbar-height);
+    width: 100%;
+    display: block;
+}
+
+/* Text based sections */
+.div--section-text {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - var(--navbar-height));
+    background-color: var(--background-color-1);
+    vertical-align: bottom;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.div-section-container {
+    margin: auto;
+}
+.h1--section-main{
+    color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+}
+.p--section-sub{
+    color: var(--main-font-color);
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+}
+.div--section-spacer {
+    height: 10px;
+}
+.a--section-link{
+    color: var(--main-font-color);
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+}
+.a--section-link i{
+    font-size: 2rem;
+}
+.a--section-link p{
+    display: inline;
+    color: var(--main-font-color);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    margin: 0px 30px 0px 4px;
+}
+
+
+/* Image based sections */
+.div--section-images {
+    background-color: var(--background-color-2);
+    width: 100%;
+    height: calc(100vh - var(--navbar-height));
+    padding-bottom: 10px;
+    min-height: fit-content;
+}
+.h1--image-main{
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+    padding: 10px 0 30px 0;
+}
+.div--images-container {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-template-rows:min-content;
+    row-gap: 10px;
+    column-gap: 2%;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.div--images-container a{
+    width:100%;
+    height: fit-content;
+    line-height: 0;
+    text-align: center;
+    text-decoration: none;
+}
+.div--images-container a img{
+    width:100%;
+}
+.div--images-nameplate {
+    width: 100%;
+    height: 50px;
+    background-color: var(--background-color-1);
+}
+.div--images-nameplate p {
+    margin: auto;
+    line-height: 50px;
+    color: var(--main-font-color);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 1000px){
+    :root {
+        --navbar-height: 60px;
+    }
+    html {
+        font-size: 14px;
+    }
+    .div--nav-spacer {
+        width: 10%;
+    }
+    .div--images-container {
+        grid-template-columns: 48% 48%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    :root {
+        --navbar-height: 50px;
+    }
+    html {
+        font-size: 12px;
+    }
+    .div--nav-spacer {
+        display: none;
+    }
+    .div--images-container {
+        grid-template-columns: 96%;
+    }
 }
