@@ -1,9 +1,9 @@
 /* Global variables */
 :root {
     --navbar-height: 75px;
-    --navbar-color: #48225D;
+    --navbar-color: rgb(101, 65, 145);
     --background-color-1: rgb(54, 54, 54);
-    --background-color-2: #005828;
+    --background-color-2: rgb(109, 148, 83);
     --main-font-color: #c79447;
 }
 
